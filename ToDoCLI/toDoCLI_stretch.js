@@ -145,8 +145,25 @@ const saveApp=()=>{
     let data = JSON.stringify(final)
     const otheranswer=()=>{
         rl.question('Where? \n', (answer4) => {
-            fs.writeFileSync(answer4, data);
-            console.log(`List saved to "${answer4}"`)
+            console.log(answer4)
+            if(answer4===''){
+                let def ="myList.json";
+                fs.writeFileSync(def, data);
+                console.log(`List saved to "${def}"`)
+            }
+            else{
+                if(answer4.includes('.json')){
+                    fs.writeFileSync(answer4, data);
+                    console.log(`List saved to "${answer4}"`)
+                }
+                else{
+                    let ext= answer4+'.json'
+                    fs.writeFileSync(ext, data);
+                    console.log(`List saved to "${ext}"`)
+                }
+            }
+
+            
             console.log(commands);
     });
     }
