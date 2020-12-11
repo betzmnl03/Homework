@@ -1,5 +1,9 @@
 #! /usr/bin/env node
+const fs=require('fs');
+const { type } = require('os');
+
 let input=process.argv.slice(2);
+
 const drawLine=(num)=>{
     let mult='';
     for(let i=0; i<num; i++){
@@ -25,7 +29,7 @@ const drawMiddleBorder=(num)=>{
 }
 
 const drawBarsAround=(str)=>{
-    return `┃${str}┃`;
+       return `┃${str}┃`;
 }
 
 
@@ -40,7 +44,6 @@ const boxIt=(arr)=>{
      });
     let max=Math.max(...len)+2;
     array.push(drawtopBorder(max))
-    
     for(let i=0;i<arr.length;i++){
         array.push(drawBarsAround(arr[i]))
         array.push(drawMiddleBorder(max))
@@ -49,8 +52,53 @@ const boxIt=(arr)=>{
 
    return array.join("\n").toString();
 }
-// console.log(boxIt(['Jon Snow', 'Cersei Lannister']))
-// console.log(boxIt(['Jon Snow']))
-// console.log(boxIt([]))
 
-console.log(boxIt(input))
+
+if(input[0].includes('.csv')){
+
+    fs.readFile(input[0],{encoding:"utf8"}, (err,data)=>{
+        if(err) throw err;
+        let newstring = data.replace(/([,]+)/g, "┃")
+        //console.log(newstring)
+        let outArr=newstring.split("\n\n");
+        //console.log(outArr)
+        console.log(boxItCsv(outArr))
+        
+    })
+    
+}
+
+else{
+    console.log(boxIt(input))
+}
+
+const boxItCsv=(arr)=>{
+
+    /*****draw top border */
+    len=[]
+    for(let x of arr){
+        len.push(x.length)
+    }
+   let maxLen=Math.max(...len)+2;
+   let half=maxLen/2;
+//    ┳
+    let item1=draw("┏","━",half)+'┳'+draw("━","┓",half);
+    let boxaround=[];
+    //boxaround[0]=item1;
+    for(let x of arr){
+        boxaround.push(`┃${x}┃`)
+    }
+    //console.log(boxaround)
+    let middleBorder=draw('┣','━',half)+'╋'+draw('━','┫',half)
+    let bottomBorder=draw("┗","━",half)+'┻'+draw("━","┛",half);
+    let output=[];
+    output[0]=item1;
+    for(let i=0; i<boxaround.length; i++){
+        output.push(boxaround[i])
+        output.push(middleBorder)
+    }
+    
+    output[output.length-1]=bottomBorder
+    return output.join("\n").toString();
+    
+}
