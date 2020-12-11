@@ -1,0 +1,16 @@
+/*** how to make my .js file a script */
+
+Step1: add following to the first line of the .js file
+
+#! /usr/bin/env node
+
+
+Step2: Turn the script into an npm project (if not already an npm project) by putting it into its own folder then running npm init inside that folder (this will create a package.json file)
+
+Step3: Edit the package.json file and add a bin property
+
+"bin" : {
+    "your-script" : "./your-script.js"
+}
+
+step4: Run npm link in the directory
