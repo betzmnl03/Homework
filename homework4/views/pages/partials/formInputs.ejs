@@ -1,0 +1,16 @@
+
+  <div class="form-group mt-4">
+    <label for="logo">Logo Url</label>
+    <input type="url" class="form-control" name="logo" id="logo" placeholder="e.g.https://www.example.com/some.png"
+    value='<%=cohort?cohort.logo_url:""%>'>
+  </div>
+  <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" name="name" id="name" placeholder="Flying Funks" required
+      value='<%=cohort?cohort.name:""%>'>
+    </div>
+  <div class="form-group">
+    <label for="members">Members</label>
+    <textarea class="form-control" id="members" name="members" rows="3" placeholder="Jon Snow,Daenerys,Melisandre,Arya Stark" required><%=cohort?cohort.members:""%></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary text-primary bg-light float-right">Submit</button>

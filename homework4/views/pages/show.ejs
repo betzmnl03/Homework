@@ -1,0 +1,68 @@
+<%- include("../partials/header")%>
+<%- include("../partials/navbar")%>
+<%if(id){%>
+    <div class="card mt-4">
+        <div class="add-items d-flex justify-content-between card-header">
+          <h1><%=cohort.name%></h1>
+            <div class="align-items-end d-flex align">
+              <a href="/cohorts/<%=cohort.id%>/edit"><button class="btn btn-primary mr-2">Edit Cohort</button></a>
+              <form action='/cohorts/<%=cohort.id %>' method='POST'>
+                <input type="hidden" name="_method" value="DELETE">
+                <button class="btn btn-primary ml-2">Delete cohort</button>
+              </form>
+            </div>
+        </div>
+     
+        <div class="card-body">
+          <p class="card-text mb-4"><%=cohort.members%></p>
+          <div class="col-12 border-bottom"></div>
+        </div>
+        <form action="" method="post">
+          <div class="radio ml-3">
+            <p>Method</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="select" id="count" value="count" required
+                <%if(select=="count"){%>
+                  checked="true"
+                <%}%>>
+                <label class="form-check-label" for="count">
+                  Team Count
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="select" id="number" value="number"
+                <%if(select=="number"){%>
+                  checked="true"
+                <%}%> > 
+                <label class="form-check-label" for="count">
+                  Number Per Team
+                </label>
+              </div>
+        </div>
+        <div class="form-group mt-4 col-12">
+            <label for="logo">Quantity</label>
+            <input type="number" class="form-control" name="quantity" id="quantity" value='<%=quantity?quantity:""%>' required>
+          
+          <button class="btn btn-primary text-primary bg-light col-12 mt-4">Assign Teams</button>
+          </div>
+          <br/>
+        </form>
+        
+        <% if(details.length>0){%>
+          <div class="m-4 d-flex">
+          <h5 class="mr-2">#</h5>   <h5 class="ml-2">Members</h5>
+          </div>
+          <%let j=1%>
+          <%for(let i=details.length-1; i>=0; i--){%>
+          <p class="m-4"><%=j%>&nbsp;&nbsp;&nbsp;&nbsp;<%=details[i]%></p>
+          <% j++}%>
+          <br/>
+          <% }%>  
+    </div>
+    <%if(details.length<=0){%>
+      <h4 class="mt-4 text-center">Quantity must be between 1 and <%=len%></h4> 
+    <%}%>
+<%} else{%>
+    <h4 class="mt-4 text-center">Cohort Not Found. Please create a new cohort</h4> 
+<%}%>
+<%- include("../partials/footer")%>

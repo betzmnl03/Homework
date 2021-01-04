@@ -1,0 +1,114 @@
+.navbar-brand.navbar-custom{
+    color: #0275d8
+}
+
+navbar-text:hover{
+    text-decoration: none;
+}
+.cohort-btn{
+    min-width: 7rem;
+}
+.nav.nav-tabs{
+    border: 0 none;
+}
+.img-thumbnail {
+    border: 0 none;
+    box-shadow: none;
+    min-width: 5rem;
+    width: 5rem;
+    min-height:50px; 
+    height:80px
+}  
+/* 
+.fade-in{
+    animation:1s ease 500ms normal forwards 1 fadein;
+    -webkit-animation:1s ease 500ms normal forwards 1 fadein infinite;
+    opacity:0
+    }
+    
+    @keyframes fadein{from{opacity:0}
+    to{opacity:1}
+    }
+    
+    @-webkit-keyframes fadein{from{opacity:0}
+    to{opacity:1}
+    }
+    .fade-in-2{
+        animation:1s ease 2s normal forwards 1 fadein;
+        -webkit-animation:1s ease 2s normal forwards 1 fadein;
+        opacity:0
+        }
+        
+        @keyframes fadein{from{opacity:0}
+        to{opacity:1}
+        }
+        
+        @-webkit-keyframes fadein{from{opacity:0}
+        to{opacity:1}
+        }
+        .fade-in-3{
+            animation:1s ease 3s normal forwards 1 fadein;
+            -webkit-animation:1s ease 3s normal forwards 1 fadein;
+            opacity:0
+            }
+            
+            @keyframes fadein{from{opacity:0}
+            to{opacity:1}
+            }
+            
+            @-webkit-keyframes fadein{from{opacity:0}
+            to{opacity:1}
+            } */
+.fade-in {
+
+    animation: fadeinout 4s linear;
+}
+.fade-in-2{
+
+    animation: fadeinout 5s linear;
+}
+.fade-in-3{
+
+    animation: fadeinout 6s linear;
+}
+
+
+@keyframes fadeinout {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.dot {
+    height: 3em;
+    width: 3em;
+    margin-left:0.1em;
+    background:linear-gradient(rgb(97, 97, 97), #bbb);
+    border-radius: 50%;
+    border: 6px solid rgb(75, 75, 75);
+    /* position: relative; */
+}
+
+  .square {
+    height: 3.5em;
+    width: 3.2em;
+    margin-right:0.3em;
+    background: linear-gradient(rgb(97, 97, 97), #bbb);
+    border: 6px solid rgb(75, 75, 75);
+    position: relative;
+    bottom: 1.1em;
+  }
+  .shape2{
+      position: relative;
+      top:0.7em;
+      right:1.2em;
+      z-index:2;
+  }
+
+  .shape3{
+    position: relative;
+    right:2.2em;
+}
+.teams{
+    position: relative;
+    right: 1.5em;
+}
