@@ -1,0 +1,24 @@
+<%- include("../partials/header")%>
+<%- include("../partials/navbar")%>
+<%if(records){
+  for(let x of records){ %>
+    <div class="card mt-4">
+      <%if(x.logo_url){%>
+      <div class="add-items d-flex"><img src='<%=x.logo_url%>' alt="logo" class="image img-thumbnail m-2 rounded-circle"><h1 class="m-4 bg-white"><%=x.name%></h1> </div>  
+      <%}else{%>
+        <h1 class="m-4 bg-white"><%=x.name%></h1>
+      <%}%>  
+    <div class="card-body">
+      <p class="card-text mb-4"><%=x.members%></p>
+      <div class="col-12 border-bottom"></div>
+    </div>
+    <form action='/cohorts/<%=x.id%>' method="get">
+        <button class="btn btn-primary col-2 m-4 cohort-btn" >Show cohort</button>
+   </form>
+    </div>
+    <br/>
+<%}}%>
+<%if(!records){%>
+  <h1>No cohorts found, add new</h1>
+  <%}%>
+<%- include("../partials/footer")%>
