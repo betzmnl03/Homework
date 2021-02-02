@@ -1,0 +1,31 @@
+<div class="container">
+    <h1><%= @post.title%></h1>
+    <p><%= @post.body%></p>
+    <p>Posted <%= time_ago_in_words(@post.created_at)%> ago</p>
+
+    <div>
+    <%= link_to("Edit", edit_post_path(@post.id), class:"btn btn-outline-primary")%>
+    <%= link_to("Delete", post_path(@post.id), method: :delete, class:"btn btn-outline-primary")%>
+    </div>
+
+    <div class="mt-4">
+        <%= form_with model: [@post, @comment], :class=>"form-group", local:true do |f|%>
+            <h4><%= f.label:comment%></h4>
+            <div class="input-group mb-2">
+                <%= f.text_area:body,cols:90,rows:5,  placeholder: "What's on your mind?",  :class=>'form-control', :required=>true%>
+            </div>
+            <div>
+                <%= f.submit :Submit, class:"btn btn-outline-primary"%>
+            </div>
+        <%end%>
+
+    </div>
+
+        <% @comments.each do |comment|%>
+     
+            <p class="d-flex flex-column mt-4"><%= comment.body%>
+            <small>Commented <%= time_ago_in_words(comment.created_at)%> ago • &nbsp;
+            <%= link_to("Delete", post_comment_path(@post.id, comment.id), method: :delete)%></small></span>
+             </p>
+    <%end%>
+</div>
