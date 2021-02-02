@@ -1,0 +1,39 @@
+<div class="container border p-4 mt-4">
+    <h1><%= @post.title%></h1>
+    <p><%= @post.body%></p>
+    <small>Posted by <%= @post.user&.name%>
+    <small><%= time_ago_in_words(@post.created_at)%> ago</small></small>
+    <div>
+    <% if can? :crud, @post%>
+        <%= link_to("Edit", edit_post_path(@post.id), class:"btn btn-outline-primary")%>
+    <%end%>
+    <% if can? :crud, @post%>
+        <%= link_to("Delete", post_path(@post.id), method: :delete, data:{confirm: "Are you sure ?"},class:"btn btn-outline-primary")%>
+    <%end%>
+    </div>
+
+    <div class="mt-4">
+        <%= form_with model: [@post, @comment], :class=>"form-group", local:true do |f|%>
+            <h4><%= f.label:comment%></h4>
+            <div class="input-group mb-2">
+                <%= f.text_area:body,cols:90,rows:5,  placeholder: "What's on your mind?",  :class=>'form-control', :required=>true%>
+            </div>
+            <div>
+                <%= f.submit :Submit, class:"btn btn-outline-primary"%>
+            </div>
+        <%end%>
+
+    </div>
+
+        <% @comments.each do |comment|%>
+     
+            <p class="d-flex flex-column"><%= comment.body%>
+            <small>Commented by: <%= comment.user&.name || "Deleted"%>
+            <small><%= time_ago_in_words(comment.created_at)%> ago </small>
+            <% if (can? :crud, comment) || (can? :crud, @post)%>
+               • <%= link_to("Delete", post_comment_path(@post.id, comment.id), method: :delete, data:{confirm: "Are you sure ?"})%>
+            <%end%>
+            </small>
+             </p>
+    <%end%>
+</div>

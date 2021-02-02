@@ -1,0 +1,49 @@
+
+<div class="container d-flex justify-content-center">
+    <div class="m-4 p-4 border col-sm-6">
+        <%if @flag%>
+            <h1 class="text-center">Update Details</h1>
+        <%else%>
+            <h1 class="text-center">Sign Up</h1>
+        <%end%>
+    <%= form_with model: @user, :class=>"form-group", local:true do |f|%>
+        <% if @user.errors.any? %>
+            <p class="text-danger">
+                <%= @user.errors.full_messages.join(', ')%>
+            </p>
+        <% end %>
+            <%= f.label :name  %> 
+        <div class="input-group mb-2">
+            <%= f.text_field :name, :class=>'form-control'%> 
+        </div>
+
+            <%= f.label :email  %> 
+        <div class="input-group mb-2 ">
+            <%= f.email_field :email, :class=>'form-control'%> 
+        </div>
+
+        <% if !@flag%>
+                <%= f.label :password %>    
+            <div class="input-group mb-2">
+                <%= f.password_field :password ,:class=>'form-control'%>
+            </div>
+                <%= f.label :password_confirmation %>
+            <div class="input-group mb-2">   
+                <%= f.password_field :password_confirmation, :class=>'form-control'%>
+            </div>
+        <%end%>
+        <div class="d-flex justify-content-center">
+        <div class="mr-2">
+        <%= f.submit :class => 'btn btn-outline-primary mt-4'%>
+        </div>
+        <div class="ml-2">
+        <%= link_to("Cancel", root_path, :class => 'btn btn-outline-primary mt-4')%>
+        </div>
+        </div>
+    <% end %>
+    <% if @flag%>
+    <div class="text-center"> <%= link_to("Change Password", user_password_path(@user.id))%></div>
+    <%end%>
+
+    </div>
+</div>

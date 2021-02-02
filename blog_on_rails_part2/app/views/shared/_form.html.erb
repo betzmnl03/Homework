@@ -1,0 +1,25 @@
+
+<div class="container mt-4">
+<%= form_with model: @post, :class=>"form-group", local:true do |f|%>
+    <%if @post.errors.any?%>
+        <p class="text-danger"><%= @post.errors.full_messages.join(", ")%></p>
+    <%end%>
+    <%= f.label :title%>
+    <div class="input-group">
+        
+        <%= f.text_field :title, :class=>'form-control mb-4', :required=>true%>
+    </div>
+    <%= f.label :body%>
+    <div class="input-group">
+        <%= f.text_area :body, cols:50 , rows:5,  :class=>'form-control', :required=>true %>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="mr-2">
+        <%= f.submit :class => 'btn btn-outline-primary mt-4'%>
+        </div>
+        <div class="ml-2">
+            <%= link_to("Cancel", root_path, :class => 'btn btn-outline-primary mt-4')%>
+        </div>
+    </div>
+<%end%>
+</div>
