@@ -1,0 +1,598 @@
+Started GET "/" for ::1 at 2021-02-02 18:40:02 -0800
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 5307)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.10
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+warning ../../../package.json: No license field
+warning ../../../package.json: No license field
+error Command "webpack" not found.
+
+  Rendered layout layouts/application.html.erb (Duration: 2701.9ms | Allocations: 112039)
+Completed 500 Internal Server Error in 2714ms (ActiveRecord: 4.0ms | Allocations: 118880)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.js in /home/betsy/CodeCore/HomeWork_Betsy/blog_on_rails_part1/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    10:     <%= javascript_pack_tag 'application' %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2021-02-02 18:40:35 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 5204)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2021-02-02 18:40:38 -0800
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2014)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/betsy/CodeCore/HomeWork_Betsy/blog_on_rails_part1/public/packs
+[Webpacker] warning ../../../package.json: No license field
+(node:64544) ExperimentalWarning: Package name self resolution is an experimental feature. This feature could change at any time
+
+[Webpacker] Hash: fbc95276e9811d3893b4
+Version: webpack 4.46.0
+Time: 2074ms
+Built at: 2021-02-02 6:40:38 p.m.
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-28be3029310757271e40.js    611 KiB  application  [emitted] [immutable]  application
+js/application-28be3029310757271e40.js.map    717 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-28be3029310757271e40.js js/application-28be3029310757271e40.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 455 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 232)
+  Rendered shared/_alert.html.erb (Duration: 0.2ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 2859.8ms | Allocations: 35330)
+Completed 200 OK in 2867ms (Views: 2858.2ms | ActiveRecord: 4.2ms | Allocations: 40960)
+
+
+[Webpacker] Compiled all packs in /home/betsy/CodeCore/HomeWork_Betsy/blog_on_rails_part1/public/packs
+[Webpacker] warning ../../../package.json: No license field
+(node:64583) ExperimentalWarning: Package name self resolution is an experimental feature. This feature could change at any time
+
+[Webpacker] Hash: fbc95276e9811d3893b4
+Version: webpack 4.46.0
+Time: 534ms
+Built at: 2021-02-02 6:40:39 p.m.
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-28be3029310757271e40.js    611 KiB  application  [emitted] [immutable]  application
+js/application-28be3029310757271e40.js.map    717 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-28be3029310757271e40.js js/application-28be3029310757271e40.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 455 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 5 hidden modules
+
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 89)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 1230.1ms | Allocations: 13428)
+Completed 200 OK in 1242ms (Views: 1229.4ms | ActiveRecord: 8.0ms | Allocations: 16801)
+
+
+Started GET "/posts/102" for ::1 at 2021-02-02 18:40:42 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"102"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 102], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `find_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["post_id", 102]]
+  ↳ app/views/posts/show.html.erb:24
+  Rendered posts/show.html.erb within layouts/application (Duration: 538.4ms | Allocations: 797655)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 89)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 543.8ms | Allocations: 804094)
+Completed 200 OK in 573ms (Views: 543.5ms | ActiveRecord: 6.3ms | Allocations: 815229)
+
+
+Started GET "/" for ::1 at 2021-02-02 18:40:44 -0800
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1927)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 89)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 8494)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 1.4ms | Allocations: 8986)
+
+
+Started GET "/posts/71" for ::1 at 2021-02-02 18:40:45 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[36mPost Load (1.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `find_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["post_id", 71]]
+  ↳ app/views/posts/show.html.erb:24
+  Rendered posts/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1568)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 89)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 8010)
+Completed 200 OK in 14ms (Views: 9.2ms | ActiveRecord: 1.8ms | Allocations: 9249)
+
+
+Started DELETE "/posts/71" for ::1 at 2021-02-02 18:40:46 -0800
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"71"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `find_post'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 71]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mComment Destroy (0.9ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 398]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mComment Destroy (0.7ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 399]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mPost Destroy (10.9ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 71]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 24ms (ActiveRecord: 15.3ms | Allocations: 5959)
+
+
+Started GET "/posts" for ::1 at 2021-02-02 18:40:46 -0800
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1883)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 89)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 58)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 8458)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.6ms | Allocations: 8940)
+
+
+Started GET "/posts/new" for ::1 at 2021-02-02 18:40:50 -0800
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: shared/_form.html.erb (called from _app_views_posts_new_html_erb__486943926881826180_18680 at /home/betsy/CodeCore/HomeWork_Betsy/blog_on_rails_part1/app/views/posts/new.html.erb:1)
+  Rendered shared/_form.html.erb (Duration: 2.4ms | Allocations: 1445)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1979)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 8420)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 8898)
+
+
+Started POST "/posts" for ::1 at 2021-02-02 18:40:55 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"new post", "body"=>"megnewjbgwhjebg ewj"}, "commit"=>"Create Post"}
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:12:in `create'
+  [1m[36mPost Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE LOWER("posts"."title") = LOWER($1) LIMIT $2[0m  [["title", "new post"], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:12:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (Duration: 2.3ms | Allocations: 1727)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1823)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 8198)
+Completed 200 OK in 24ms (Views: 10.1ms | ActiveRecord: 6.0ms | Allocations: 12178)
+
+
+Started POST "/posts" for ::1 at 2021-02-02 18:40:58 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"new post", "body"=>"megnewjbgwhjebg ewjemgnjebg jerhbg wjehgb wjeb "}, "commit"=>"Create Post"}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:12:in `create'
+  [1m[36mPost Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE LOWER("posts"."title") = LOWER($1) LIMIT $2[0m  [["title", "new post"], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/posts_controller.rb:12:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (Duration: 2.4ms | Allocations: 1644)
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1740)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 8109)
+Completed 200 OK in 17ms (Views: 10.1ms | ActiveRecord: 1.8ms | Allocations: 11512)
+
+
+Started POST "/posts" for ::1 at 2021-02-02 18:41:01 -0800
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"new post", "body"=>"megnewjbgwhjebg ewjemgnjebg jerhbg wjehgb wjeb fkewkngjkwnejgwebgjhb"}, "commit"=>"Create Post"}
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:12:in `create'
+  [1m[36mPost Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE LOWER("posts"."title") = LOWER($1) LIMIT $2[0m  [["title", "new post"], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:12:in `create'
+  [1m[36mPost Create (1.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "new post"], ["body", "megnewjbgwhjebg ewjemgnjebg jerhbg wjehgb wjeb fkewkngjkwnejgwebgjhb"], ["created_at", "2021-02-03 02:41:01.708211"], ["updated_at", "2021-02-03 02:41:01.708211"]]
+  ↳ app/controllers/posts_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:12:in `create'
+Redirected to http://localhost:3000/posts/111
+Completed 302 Found in 16ms (ActiveRecord: 4.7ms | Allocations: 3910)
+
+
+Started GET "/posts/111" for ::1 at 2021-02-02 18:41:01 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"111"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 111], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `find_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["post_id", 111]]
+  ↳ app/views/posts/show.html.erb:24
+  Rendered posts/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1364)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 89)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 58)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 7814)
+Completed 200 OK in 12ms (Views: 8.7ms | ActiveRecord: 1.1ms | Allocations: 9034)
+
+
+Started DELETE "/posts/111" for ::1 at 2021-02-02 18:41:07 -0800
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"111"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 111], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `find_post'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 111]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mPost Destroy (0.6ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 111]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 10ms (ActiveRecord: 3.9ms | Allocations: 3776)
+
+
+Started GET "/posts" for ::1 at 2021-02-02 18:41:07 -0800
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1883)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 89)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 57)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 8457)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.6ms | Allocations: 8939)
+
+
+Started GET "/posts/99" for ::1 at 2021-02-02 18:41:08 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `find_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (2.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["post_id", 99]]
+  ↳ app/views/posts/show.html.erb:24
+  Rendered posts/show.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1790)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 89)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 8230)
+Completed 200 OK in 23ms (Views: 14.6ms | ActiveRecord: 4.0ms | Allocations: 9449)
+
+
+Started GET "/posts/99/edit" for ::1 at 2021-02-02 18:41:09 -0800
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `find_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered shared/_form.html.erb (Duration: 2.2ms | Allocations: 884)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1055)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 7496)
+Completed 200 OK in 16ms (Views: 10.6ms | ActiveRecord: 1.1ms | Allocations: 8670)
+
+
+Started PATCH "/posts/99" for ::1 at 2021-02-02 18:41:17 -0800
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"Aperiam perferendis consequuntur.edit", "body"=>"sjvgebwjhbgwwjkgbqwhjwgbjqkjwgblewjbguewhjbkewhjbilewj"}, "commit"=>"Update Post", "id"=>"99"}
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `find_post'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:36:in `update'
+  [1m[36mPost Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "posts" WHERE LOWER("posts"."title") = LOWER($1) AND "posts"."id" != $2 LIMIT $3[0m  [["title", "Aperiam perferendis consequuntur.edit"], ["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:36:in `update'
+  [1m[36mPost Update (1.1ms)[0m  [1m[33mUPDATE "posts" SET "title" = $1, "body" = $2, "updated_at" = $3 WHERE "posts"."id" = $4[0m  [["title", "Aperiam perferendis consequuntur.edit"], ["body", "sjvgebwjhbgwwjkgbqwhjwgbjqkjwgblewjbguewhjbkewhjbilewj"], ["updated_at", "2021-02-03 02:41:17.951618"], ["id", 99]]
+  ↳ app/controllers/posts_controller.rb:36:in `update'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:36:in `update'
+Redirected to http://localhost:3000/posts/99
+Completed 302 Found in 19ms (ActiveRecord: 5.8ms | Allocations: 4487)
+
+
+Started GET "/posts/99" for ::1 at 2021-02-02 18:41:17 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `find_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["post_id", 99]]
+  ↳ app/views/posts/show.html.erb:24
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1790)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 89)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 57)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 8244)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 1.1ms | Allocations: 9463)
+
+
+Started POST "/posts/99/comments" for ::1 at 2021-02-02 18:41:21 -0800
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "comment"=>{"body"=>"fengjbwhj"}, "commit"=>"Submit", "post_id"=>"99"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:22:in `find_post'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mComment Create (1.0ms)[0m  [1m[32mINSERT INTO "comments" ("body", "post_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["body", "fengjbwhj"], ["post_id", 99], ["created_at", "2021-02-03 02:41:21.909649"], ["updated_at", "2021-02-03 02:41:21.909649"]]
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:7:in `create'
+Redirected to http://localhost:3000/posts/99
+Completed 302 Found in 9ms (ActiveRecord: 3.3ms | Allocations: 3443)
+
+
+Started GET "/posts/99" for ::1 at 2021-02-02 18:41:21 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `find_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["post_id", 99]]
+  ↳ app/views/posts/show.html.erb:24
+  Rendered posts/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1885)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 89)
+  Rendered shared/_alert.html.erb (Duration: 0.3ms | Allocations: 58)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 8330)
+Completed 200 OK in 14ms (Views: 10.6ms | ActiveRecord: 1.1ms | Allocations: 9549)
+
+
+Started DELETE "/posts/99/comments/596" for ::1 at 2021-02-02 18:41:25 -0800
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post_id"=>"99", "id"=>"596"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:22:in `find_post'
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 596], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:14:in `destroy'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:15:in `destroy'
+  [1m[36mComment Destroy (0.6ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 596]]
+  ↳ app/controllers/comments_controller.rb:15:in `destroy'
+  [1m[36mTRANSACTION (10.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:15:in `destroy'
+Redirected to http://localhost:3000/posts/99
+Completed 302 Found in 21ms (ActiveRecord: 13.7ms | Allocations: 3486)
+
+
+Started GET "/posts/99" for ::1 at 2021-02-02 18:41:25 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `find_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["post_id", 99]]
+  ↳ app/views/posts/show.html.erb:24
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1789)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 89)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 57)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 8238)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.8ms | Allocations: 9459)
+
+
+Started DELETE "/posts/99/comments/562" for ::1 at 2021-02-02 18:41:29 -0800
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post_id"=>"99", "id"=>"562"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:22:in `find_post'
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."id" = $1 LIMIT $2[0m  [["id", 562], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:14:in `destroy'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:15:in `destroy'
+  [1m[36mComment Destroy (0.8ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 562]]
+  ↳ app/controllers/comments_controller.rb:15:in `destroy'
+  [1m[36mTRANSACTION (10.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:15:in `destroy'
+Redirected to http://localhost:3000/posts/99
+Completed 302 Found in 18ms (ActiveRecord: 13.0ms | Allocations: 3343)
+
+
+Started GET "/posts/99" for ::1 at 2021-02-02 18:41:30 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `find_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["post_id", 99]]
+  ↳ app/views/posts/show.html.erb:24
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1685)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 89)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 57)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 8126)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.9ms | Allocations: 9345)
+
+
+Started GET "/" for ::1 at 2021-02-02 18:41:33 -0800
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1882)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 89)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 8447)
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 1.6ms | Allocations: 8929)
+
+
+Started GET "/posts/99" for ::1 at 2021-02-02 18:41:34 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mPost Load (1.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `find_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["post_id", 99]]
+  ↳ app/views/posts/show.html.erb:24
+  Rendered posts/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1677)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 89)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 8117)
+Completed 200 OK in 18ms (Views: 11.2ms | ActiveRecord: 2.4ms | Allocations: 9336)
+
+
+Started DELETE "/posts/99" for ::1 at 2021-02-02 18:41:36 -0800
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"99"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `find_post'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 99]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mComment Destroy (0.7ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 560]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mComment Destroy (0.5ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 561]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mComment Destroy (0.6ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 563]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mPost Destroy (0.6ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 99]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mTRANSACTION (10.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 25ms (ActiveRecord: 15.6ms | Allocations: 6273)
+
+
+Started GET "/posts" for ::1 at 2021-02-02 18:41:36 -0800
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1846)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 89)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 57)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 8428)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.6ms | Allocations: 8910)
+
+
+Started GET "/posts/88" for ::1 at 2021-02-02 18:41:53 -0800
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"88"}
+  [1m[36mPost Load (1.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 88], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `find_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (1.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1 ORDER BY "comments"."created_at" DESC[0m  [["post_id", 88]]
+  ↳ app/views/posts/show.html.erb:24
+  Rendered posts/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1565)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 89)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 8005)
+Completed 200 OK in 20ms (Views: 13.1ms | ActiveRecord: 2.8ms | Allocations: 9224)
+
+
+Started DELETE "/posts/88" for ::1 at 2021-02-02 18:41:54 -0800
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"88"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 88], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:59:in `find_post'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 88]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mComment Destroy (0.6ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 501]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mComment Destroy (0.5ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 502]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mPost Destroy (0.5ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = $1[0m  [["id", 88]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[36mTRANSACTION (10.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 23ms (ActiveRecord: 14.4ms | Allocations: 5445)
+
+
+Started GET "/posts" for ::1 at 2021-02-02 18:41:54 -0800
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY "posts"."created_at" DESC[0m
+  ↳ app/views/posts/index.html.erb:4
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1809)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 89)
+  Rendered shared/_alert.html.erb (Duration: 0.1ms | Allocations: 57)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 8391)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.9ms | Allocations: 8873)
+
+
